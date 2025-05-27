@@ -7,4 +7,8 @@ df = pd.read_csv("athlete_events.csv")
 print(df.head())
 
 # Show the column names
-print(df.columns)
+print(df.columns
+# Shows the count of how much people play the top 5 sports
+print(df['Sport'].value_counts().head())
+# shows the number of males to the number of females
+print(df['Sex'].value_counts())
